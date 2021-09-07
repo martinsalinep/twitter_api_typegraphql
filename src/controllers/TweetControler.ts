@@ -6,8 +6,7 @@ import MongoTweet from "../database/schemas/Tweet";
 class TweetController {
   @Query((returns) => [Tweet], { name: "tweets" })
   async find() {
-    const tweets = await MongoTweet.find();
-    return tweets;
+    return MongoTweet.find();
   }
 
   @Query((returns) => Tweet, { name: "tweet" })
@@ -26,8 +25,8 @@ class TweetController {
     @Arg("author") author: string,
     @Arg("description") description: string
   ) {
-    const tweet = await MongoTweet.create({ author, description, likes: 0 });
-    return tweet;
+    return MongoTweet.create({ author, description, likes: 0 });
+    
   }
 
   @Mutation((returns) => Tweet, { name: "like" })
