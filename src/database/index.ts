@@ -1,3 +1,4 @@
 import mongoose from "mongoose";
+import { DB_URI } from "../../db";
 
-mongoose.connect('mongodb+srv://admin:admin@cluster0.lxtww.mongodb.net/twitterdb?retryWrites=true&w=majority');
+mongoose.connect(DB_URI);
