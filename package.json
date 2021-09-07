@@ -1,0 +1,33 @@
+{
+  "name": "twitter_api_typegraphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:server": "tsnd --transpile-only --ignore-whatch node_modules src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinsalinep/twitter_api_typegraphql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martinsalinep/twitter_api_typegraphql/issues"
+  },
+  "homepage": "https://github.com/martinsalinep/twitter_api_typegraphql#readme",
+  "dependencies": {
+    "apollo-server": "^3.3.0",
+    "class-validator": "^0.13.1",
+    "graphql": "^15.5.3",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/mongoose": "^5.11.97",
+    "mongoose": "^6.0.5",
+    "typescript": "^4.4.2",
+    "ts-node-dev": "^1.1.8"
+  }
+}
